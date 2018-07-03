@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.Board {
+  padding: 40px;
+  /* background: rgba(0,0,0,.2); */
+}
+
+.Board-logo {
+  animation: Board-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Board-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Board-title {
+  font-size: 1.5em;
+}
+
+.Board-intro {
+  font-size: large;
+}
+
+.Row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Square {
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  background: #85c068;
+  font-size: 24px;
+}
+
+.Square.checked {
+  background: rgba(0,0,0,.1);
+}
+
+.Square.mine-1 {
+  color: blue;
+}
+
+.Square.mine-2 {
+  color: green;
+}
+
+.Square.mine-3 {
+  color: red;
+}
+
+.Square.mine-4 {
+  color: blue;
+}
+
+.Square.bombed {
+  background: orange;
+}
+
+@keyframes Board-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flag-count,
+#board-header {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+#timer {
+  margin-left: 40px;
+}
+
+#standings {
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.standing-column {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.standing {
+  margin-top: 5px;
+}
+
+.column-name {
+  text-transform: capitalize;
+}
+
+button {
+  cursor: pointer;
+  padding: 7px 12px;
+  border: none;
+  background: #85c068;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+button.active,
+button:hover {
+  background: rgba(133,192,104, .7);
+}
